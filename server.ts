@@ -1,5 +1,7 @@
 /// <reference path ="_reference.ts"/>
 import express = require('express');
+import path = require('path');
+
 
 var app:express.Express = express();
 
@@ -7,12 +9,13 @@ var port:number = process.env.port || 3000;
 
 //Main Route
 app.get('/', function (req:express.Request, res:express.Response, next:any) {
-    res.send("My Website Is On Its Way!");
+   // res.send("My Website Is On Its Way!");
+   res.sendFile(path.join(__dirname, "Public", "index.html"));
 });
 
 //Route Info Page
-app.get('/info', function (req:express.Request, res:express.Response){
-   res.send("My Info Page Goes Here!"); 
+app.get('/projects', function (req:express.Request, res:express.Response){
+  res.sendFile(path.join(__dirname, "Public", "projects.html"));
 });
 
 app.listen(port, function(){
