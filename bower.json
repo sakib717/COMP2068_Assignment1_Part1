@@ -1,0 +1,19 @@
+{
+  "name": "comp2068_assignment1_part1",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "sakib717 <sakibsabbir7@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Scripts/lib",
+    "test",
+    "tests"
+  ]
+}
